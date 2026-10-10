@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070913">
+<title>Snehashish Ganguly — Digital World</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div class="noise"></div><div class="ambient a1"></div><div class="ambient a2"></div>
+<section id="gate" class="gate">
+  <div class="gate-stars" aria-hidden="true"></div>
+  <div class="gate-top"><div class="sigil">SG<span>✦</span></div><span class="mono">PERSONAL DIGITAL SPACE / 001</span><span class="mono gate-time" id="gateTime">HYD · INDIA</span></div>
+  <div class="gate-layout">
+    <div class="gate-copy">
+      <p class="overline"><span class="live-dot"></span> AN INTERACTIVE PORTFOLIO</p>
+      <h1>Step inside<br>my <span class="shine">digital world.</span></h1>
+      <p class="gate-sub">A space for ideas, experiments, and things built with curiosity.</p>
+      <div class="gate-rule"></div>
+      <form id="entryForm" class="entry-form">
+        <label for="visitor">YOUR NAME <span>OPTIONAL</span></label>
+        <input id="visitor" maxlength="40" autocomplete="name" placeholder="What should I call you?">
+        <button class="enter-btn" type="submit"><span>ENTER THE EXPERIENCE</span><b>↗</b></button>
+      </form>
+      <button id="guest" class="guest">or continue as a guest <span>→</span></button>
+      <p class="privacy-note">WELCOME SCREEN ONLY · NO ACCOUNT NEEDED</p>
+    </div>
+    <div class="gate-visual" aria-label="Abstract animated 3D portal">
+      <div class="portal-halo"></div><div class="portal-ring ring-1"></div><div class="portal-ring ring-2"></div><div class="portal-ring ring-3"></div>
+      <div class="portal-core"><span>SG</span></div><div class="portal-particle p1"></div><div class="portal-particle p2"></div><div class="portal-particle p3"></div>
+      <div class="portal-label label-a">CREATIVE ENGINEERING</div><div class="portal-label label-b">AI · SOFTWARE · DEVELOPMENT</div>
+      <div class="portal-coordinates mono">17°23' N<br>78°29' E</div>
+    </div>
+  </div>
+  <div class="gate-bottom"><span>DESIGNED TO BE EXPLORED</span><span>SCROLL IS A JOURNEY <b>↓</b></span><span>© SG PORTFOLIO</span></div>
+</section>
+
+<div id="world" class="world hidden">
+  <header class="topbar">
+    <a href="#home" class="wordmark"><span class="mini-sigil">SG</span><span>SNEHASHISH<span class="cyan">.</span></span></a>
+    <nav><a href="#projects">Projects</a><a href="#skills">Toolkit</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <button id="resumeBtn" class="resume-btn">VIEW RESUME <span>↗</span></button>
+  </header>
+  <main>
+    <section id="home" class="world-hero">
+      <canvas id="universe" aria-label="Animated 3D particle environment"></canvas>
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <p id="hello" class="overline"><span class="live-dot"></span> BCA FINAL-YEAR STUDENT · HYDERABAD, INDIA</p>
+          <h2>Ideas become<br><span class="shine">experiences.</span></h2>
+          <p class="hero-intro">I'm Snehashish Ganguly — exploring software development, AI, and practical digital experiences.</p>
+          <div class="hero-buttons"><a class="solid-btn" href="#projects">EXPLORE PROJECTS <span>↓</span></a><a class="ghost-btn" href="#contact">LET'S CONNECT ↗</a></div>
+          <div class="hero-stats"><div><strong>04</strong><small>RESUME PROJECTS</small></div><div><strong>AI + DEV</strong><small>AREAS OF INTEREST</small></div><div><strong>∞</strong><small>THINGS TO LEARN</small></div></div>
+        </div>
+        <div class="scene-caption mono"><span class="caption-dot"></span> DIGITAL ENVIRONMENT <span>— MOVE YOUR CURSOR</span></div>
+        <div class="scene-index mono">SCENE_01<br><span>PORTFOLIO WORLD</span></div>
+      </div>
+      <a class="scroll-cue" href="#projects"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section id="projects" class="content-section projects-section">
+      <div class="section-head"><div><p class="overline">01 / SELECTED WORK</p><h2>Objects of <span class="shine">curiosity.</span></h2></div><p class="head-note">Four projects. One growing journey.<br>Every project here comes from my resume.</p></div>
+      <div class="project-world">
+        <button class="project-object object-one" data-project="gitlyze"><span class="object-glow"></span><span class="object-symbol">&lt;/&gt;</span><span class="object-index">01</span><span class="object-name">GITLYZE</span><span class="object-type">CODE INTELLIGENCE</span></button>
+        <button class="project-object object-two" data-project="pulmora"><span class="object-glow"></span><span class="object-symbol">◉</span><span class="object-index">02</span><span class="object-name">PULMORA AI</span><span class="object-type">EXPLAINABLE AI</span></button>
+        <button class="project-object object-three" data-project="copilot"><span class="object-glow"></span><span class="object-symbol">⌘</span><span class="object-index">03</span><span class="object-name">RESEARCH COPILOT</span><span class="object-type">AGENT · KNOWLEDGE</span></button>
+        <button class="project-object object-four" data-project="jachacks"><span class="object-glow"></span><span class="object-symbol">✳</span><span class="object-index">04</span><span class="object-name">JACHACKS SIMULATION</span><span class="object-type">AGENTIC WORLD</span></button>
+      </div>
+      <p class="micro-note">SELECT AN OBJECT TO OPEN ITS PROJECT FILE <span>↗</span></p>
+      <div id="projectDetail" class="project-detail hidden" aria-live="polite"><button id="detailClose" class="detail-close" aria-label="Close project details">×</button><p id="detailKicker" class="overline">PROJECT FILE</p><h3 id="detailTitle"></h3><p id="detailDescription"></p><div id="detailTags" class="tags"></div><p class="detail-footnote">Project description based on the supplied resume. No external demo links are implied.</p></div>
+    </section>
+
+    <section id="skills" class="content-section skills-section">
+      <div class="section-head"><div><p class="overline">02 / TOOLKIT</p><h2>My technical <span class="shine">constellation.</span></h2></div><p class="head-note">Tools and technologies listed in my resume.</p></div>
+      <div class="dashboard">
+        <div class="dash-top"><span class="mono">SKILL_MATRIX / SG</span><span class="dash-live"><i></i> SYSTEM ONLINE</span></div>
+        <div class="skill-matrix">
+          <article class="skill-tile"><span class="tile-no">01</span><div class="tile-icon">⌘</div><h3>Languages</h3><p>Python · C/C++ · Java · JavaScript · TypeScript · SQL</p><div class="meter"><i style="width:86%"></i></div></article>
+          <article class="skill-tile"><span class="tile-no">02</span><div class="tile-icon">◈</div><h3>Frontend</h3><p>React · Next.js · Tailwind CSS · HTML · CSS · Responsive UI</p><div class="meter"><i style="width:82%"></i></div></article>
+          <article class="skill-tile"><span class="tile-no">03</span><div class="tile-icon">⌬</div><h3>Backend &amp; Cloud</h3><p>FastAPI · Node.js · Express · Supabase · PostgreSQL · REST APIs · Vercel · Render · Streamlit</p><div class="meter"><i style="width:75%"></i></div></article>
+          <article class="skill-tile"><span class="tile-no">04</span><div class="tile-icon">✳</div><h3>AI &amp; Tools</h3><p>PyTorch · Grad-CAM · ChromaDB · Exa Search API · Git · GitHub · Linux · ESLint · WebRTC</p><div class="meter"><i style="width:78%"></i></div></article>
+        </div>
+        <div class="dash-bottom mono"><span>LEARNING NEVER STOPS</span><span>END OF MATRIX <b>✦</b></span></div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section about-section">
+      <div class="about-orb"><div class="about-orb-inner">SG</div><span class="orb-line"></span></div>
+      <div class="about-copy"><p class="overline">03 / THE PERSON BEHIND THE PIXELS</p><h2>Curious by nature.<br><span class="shine">Builder by practice.</span></h2><p>I'm a BCA final-year student with a foundation in computer applications and programming fundamentals. I enjoy learning new technologies, solving problems, and collaborating to turn ideas into working projects.</p><div class="about-details"><div><span>EDUCATION</span><strong>Bachelor of Computer Applications</strong></div><div><span>COMMUNITY</span><strong>College Technical Club · Event Coordinator</strong></div><div><span>LOCATION</span><strong>Hyderabad, Telangana, India</strong></div></div></div>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+      <p class="overline">04 / OPEN CHANNEL</p><h2>Something on<br>your <span class="shine">mind?</span></h2><p class="contact-lede">For opportunities, collaboration, or a friendly conversation.</p>
+      <form id="contactForm" class="contact-form">
+        <div class="form-row"><div><label for="contactName">YOUR NAME</label><input id="contactName" required maxlength="80" placeholder="Name"></div><div><label for="contactEmail">YOUR EMAIL</label><input id="contactEmail" required type="email" placeholder="you@example.com"></div></div>
+        <div><label for="contactMessage">MESSAGE</label><textarea id="contactMessage" required rows="4" maxlength="3000" placeholder="Tell me what you're thinking..."></textarea></div>
+        <button class="solid-btn" type="submit">PREPARE EMAIL <span>↗</span></button>
+        <p class="form-hint">This opens your email app with the message filled in. Nothing is stored or sent by this website.</p>
+      </form>
+      <a class="email-link" href="mailto:gangulysnehashish047@gmail.com">gangulysnehashish047@gmail.com ↗</a>
+    </section>
+  </main>
+  <footer class="footer"><a href="#home" class="wordmark"><span class="mini-sigil">SG</span><span>SNEHASHISH<span class="cyan">.</span></span></a><span class="mono">MADE WITH CURIOSITY <b>✦</b> <span id="year"></span></span><a href="#home">BACK TO TOP ↑</a></footer>
+</div>
+
+<div id="resumeModal" class="resume-modal hidden" role="dialog" aria-modal="true" aria-label="Resume viewer">
+  <div class="resume-backdrop" data-dismiss="resume"></div><div class="resume-window"><div class="resume-window-head"><span>RESUME / SNEHASHISH GANGULY</span><button id="resumeClose" aria-label="Close resume">×</button></div><iframe title="Resume PDF" src="assets/Snehashish_Ganguly_Resume.pdf#toolbar=1&view=FitH"></iframe><a class="download-resume" href="assets/Snehashish_Ganguly_Resume.pdf" download>DOWNLOAD PDF ↗</a></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

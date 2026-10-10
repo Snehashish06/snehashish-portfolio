@@ -1,0 +1,6 @@
+@media (max-width: 600px) {
+  .world-hero {
+    height: max(680px, min(780px, calc(100vh - 62px)));
+    max-height: none;
+  }
+}
